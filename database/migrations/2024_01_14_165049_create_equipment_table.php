@@ -11,12 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('muscle_traineds', function (Blueprint $table) {
+        Schema::create('equipment', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('exercise_id');
-            $table->foreignId('primaryMuscleTrained');
-            $table->foreignId('secondaryMuscleTrained')->nullable();
-            $table->foreignId('tertiaryMuscleTrained')->nullable();
+            $table->string('name', 255);
             $table->timestamps();
         });
     }
@@ -26,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('muscle_traineds');
+        Schema::dropIfExists('equipment');
     }
 };

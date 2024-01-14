@@ -14,6 +14,10 @@ return new class extends Migration
         Schema::create('exercises', function (Blueprint $table) {
             $table->id();
             $table->string('name', 255);
+            $table->string("equipment_id", 255);
+            $table->foreignId('primaryMuscleTrained');
+            $table->foreignId('secondaryMuscleTrained')->nullable();
+            $table->foreignId('tertiaryMuscleTrained')->nullable();
             $table->timestamps();
         });
     }

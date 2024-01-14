@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\MuscleTrained;
-use App\Http\Requests\StoreMuscleTrainedRequest;
-use App\Http\Requests\UpdateMuscleTrainedRequest;
+use App\Models\Equipment;
+use App\Http\Requests\StoreEquipmentRequest;
+use App\Http\Requests\UpdateEquipmentRequest;
 
-class MuscleTrainedController extends Controller
+class EquipmentController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -27,7 +27,7 @@ class MuscleTrainedController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreMuscleTrainedRequest $request)
+    public function store(StoreEquipmentRequest $request)
     {
         //
     }
@@ -35,7 +35,7 @@ class MuscleTrainedController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(MuscleTrained $muscleTrained)
+    public function show(Equipment $equipment)
     {
         //
     }
@@ -43,7 +43,7 @@ class MuscleTrainedController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(MuscleTrained $muscleTrained)
+    public function edit(Equipment $equipment)
     {
         //
     }
@@ -51,7 +51,7 @@ class MuscleTrainedController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateMuscleTrainedRequest $request, MuscleTrained $muscleTrained)
+    public function update(UpdateEquipmentRequest $request, Equipment $equipment)
     {
         //
     }
@@ -59,7 +59,7 @@ class MuscleTrainedController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(MuscleTrained $muscleTrained)
+    public function destroy(Equipment $equipment)
     {
         //
     }
