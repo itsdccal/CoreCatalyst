@@ -12,16 +12,4 @@ class Muscle extends Model
     protected $guarded = [
         'id'
     ];
-
-    public function primaryMuscle() {
-        return $this->belongsTo(Muscle::class, 'primaryMuscleTrained');
-    }
-
-    public function secondaryMuscle() {
-        return $this->belongsTo(Muscle::class, 'secondaryMuscleTrained');
-    }
-
-    public function tertiaryMuscle() {
-        return $this->belongsTo(Muscle::class, 'tertiaryMuscleTrained');
-    }
 }
